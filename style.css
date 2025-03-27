@@ -1,0 +1,105 @@
+:root{
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+
+    /* Font */
+    --heading: "Young Serif", serif;
+    --main-font: "Outfit", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--main-font);
+    background-color: var(--Stone-100);
+    padding: 1rem;
+    color: var(--Stone-600);
+    margin: 0;
+    padding: 0;
+}
+
+body p{
+    font-size: 16px;
+}
+
+.card{
+    background-color: var(--White);
+    max-width: 650px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-omelette{
+    width: 100%;
+    border-radius: 15px;
+}
+
+header h1{
+    color: var(--Stone-900);
+}
+
+h1, h2{
+    font-family: var(--heading);
+    color: var(--Brown-800);
+}
+
+h3{
+    color: var(--Rose-800);
+}
+
+header p{
+    color: var(--Stone-600);
+}
+
+ul, li, p{
+    padding: 0;
+    line-height: 25px;
+    padding: 4px 0px 4px;
+}
+
+ul li{
+    margin-left: 20px;
+    padding-left: 13px;
+}
+
+.preparation-time{
+    margin-left: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid var(--Stone-150);
+  }
+
+  td {
+    padding: 8px;
+  }
+  th {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  hr {
+    border: 1px solid var(--Stone-150);
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    .card {
+      border-radius: 0;
+    }
+  }
